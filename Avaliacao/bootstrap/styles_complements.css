@@ -1,0 +1,33 @@
+/* Identidade visual GoodPay — substitui o tema antigo sem alterar a estrutura HTML. */
+:root {
+  --gp-navy: #07152f;
+  --gp-blue: #2563eb;
+  --gp-cyan: #38bdf8;
+  --gp-text: #172b4d;
+}
+body {
+  background: linear-gradient(180deg, #eef5ff 0%, #f8fbff 48%, #eaf2ff 100%);
+  color: var(--gp-text);
+  font-family: Inter, system-ui, -apple-system, "Segoe UI", sans-serif;
+}
+.navbar, .offcanvas {
+  background: linear-gradient(100deg, #07152f, #123d73) !important;
+}
+.navbar .bi, .offcanvas .bi { color: #7dd3fc !important; }
+.btn-success, .btn-primary {
+  background: var(--gp-blue) !important;
+  border-color: var(--gp-blue) !important;
+}
+.btn-outline-success {
+  color: var(--gp-blue) !important;
+  border-color: var(--gp-blue) !important;
+}
+.card {
+  border: 1px solid #dbeafe;
+  border-radius: 16px;
+  overflow: hidden;
+  box-shadow: 0 8px 24px rgba(15, 40, 80, .08);
+}
+.card-title { color: #123d73; font-weight: 700; }
+.card-footer { background: #f5f9ff; }
+.nav-tabs .nav-link.active { color: var(--gp-blue); font-weight: 700; }

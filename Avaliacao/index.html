@@ -1,0 +1,343 @@
+<!doctype html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>GoodPay | Sua vida financeira em equilíbrio</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
+    <link rel="stylesheet" href="./bootstrap/styles_complements.css">
+</head>
+
+<body>
+    <header>
+        <section name="navbar-site">
+            <nav class="navbar navbar-dark fixed-top">
+                <div class="container">
+                    <a class="navbar-brand" href="#">
+                        <img src="./assets/goodpay-logo.svg" alt="Logo Marca" width="45px" height="45px">
+                    </a>
+                    <div class="img-fluid">
+                        <img src="./assets/goodpay-wordmark.svg" alt="Letreiro" width="25%">
+                    </div>
+                    <div class="icon">
+                        <h5><i class="bi bi-instagram text-success"></i></h5>
+                    </div>
+                    <div class="icon">
+                        <h5><i class="bi bi-youtube text-success"></i></h5>
+                    </div>
+                    <div class="icon">
+                        <h5><i class="bi bi-facebook text-success"></i></h5>
+                    </div>
+                    <div class="icon">
+                        <h5><i class="bi bi-twitter text-success"></i></h5>
+                    </div>
+                    <div class="icon">
+                        <h5><i class="bi bi-tiktok text-success"></i></h5>
+                    </div>
+                    <div class="icon">
+                        <h5><i class="bi bi-line text-success"></i></h5>
+                    </div>
+                    <div class="btn-group">
+                        <button type="button" class="btn btn-success">
+                            <i class="bi bi-piggy-bank-fill text-white"></i> Seus Ecopoints
+                        </button>
+                        <button type="button" class="btn btn-success dropdown-toggle dropdown-toggle-split"
+                            data-bs-toggle="dropdown" aria-expanded="false">
+                            <span class="visually-hidden">Ecopoints</span>
+                        </button>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="#">Conta</a></li>
+                            <li><a class="dropdown-item" href="#">Nossa trajetória de Ecopoints</a></li>
+                            <li><a class="dropdown-item" href="#">Saldo e Extratos</a></li>
+                            <li>
+                                <hr class="dropdown-divider">
+                            </li>
+                            <li><a class="dropdown-item" href="#">Sair da conta</a></li>
+                        </ul>
+                    </div>
+                    <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas"
+                        data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar"
+                        aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar"
+                        aria-labelledby="offcanvasNavbarLabel">
+                        <div class="offcanvas-header">
+                            <img src="assets/goodpay-wordmark.svg" alt="Menu Titulo" width="100%">
+                            <button type="button" class="btn-close" data-bs-dismiss="offcanvas"
+                                aria-label="Close"></button>
+                        </div>
+                        <div class="offcanvas-body">
+                            <hr>
+                            <div>
+                                <div class="input-group mb-3">
+                                    <span class="input-group-text" id="inputGroup-sizing-default">E-mail</span>
+                                    <input type="text" class="form-control" aria-label="Sizing example input"
+                                        aria-describedby="inputGroup-sizing-default" id="emailLogin" type="email" placeholder="demo@goodpay.com.br">
+                                </div>
+                                <div class="input-group mb-3">
+                                    <span class="input-group-text" id="inputGroup-sizing-default">Senha</span>
+                                    <input type="text" class="form-control" aria-label="Sizing example input"
+                                        aria-describedby="inputGroup-sizing-default" id="senhaLogin" type="password" placeholder="Senha de demonstração">
+                                </div>
+                                <div class="d-grid gap-2">
+                                    <button class="btn btn-success" type="button"
+                                        onclick="intializeLogin()">Entrar</button>
+                                    <button class="btn btn-outline-success" type="button">Cadastrar</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </nav>
+        </section>
+    </header>
+    <main>
+        <section name="slide-show">
+            <div class="container" style="margin-top: 100px;">
+                <div id="carouselExampleIndicators" class="carousel slide">
+                    <div class="carousel-indicators">
+                        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0"
+                            class="active" aria-current="true" aria-label="Slide 1"></button>
+                        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"
+                            aria-label="Slide 2"></button>
+                        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2"
+                            aria-label="Slide 3"></button>
+                    </div>
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                            <img src="./assets/banner1.svg" class="d-block w-100" alt="Promoções Banners 1">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="./assets/banner2.svg" class="d-block w-100" alt="Promoções Banners 2">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="./assets/banner3.svg" class="d-block w-100" alt="Promoções Banners 3">
+                        </div>
+                    </div>
+                    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators"
+                        data-bs-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Anterior</span>
+                    </button>
+                    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators"
+                        data-bs-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Próxi</span>
+                    </button>
+                </div>
+            </div>
+        </section>
+        <section name="cards-produtos">
+            <div class="container" style="margin-top: 20px;">
+                <div class="row row-cols-1 row-cols-md-3 g-4">
+                    <div class="col">
+                        <div class="card h-100">
+                            <img src="./assets/card1.svg" class="card-img-top" alt="Promoção 1">
+                            <div class="card-body">
+                                <h5 class="card-title">Seu dinheiro, seus planos</h5>
+                                <p class="card-text">
+                                    Organize suas finanças sem deixar de aproveitar o que realmente importa. Com o GoodPay, você acompanha suas despesas, planeja momentos especiais e mantém seus objetivos no caminho certo. Tenha mais clareza sobre suas escolhas e tranquilidade para viver o presente.
+                                </p>
+                            </div>
+                            <div class="card-footer">
+                                <small class="text-body-secondary">Conteúdo demonstrativo</small>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="card h-100">
+                            <img src="./assets/card2.svg" class="card-img-top" alt="Promoção 2">
+                            <div class="card-body">
+                                <h5 class="card-title">Pequenas escolhas, grandes resultados</h5>
+                                <p class="card-text">
+                                    Economizar começa com informação. Registre seus gastos, identifique hábitos e defina limites que façam sentido para sua rotina. O GoodPay ajuda você a visualizar para onde o dinheiro vai e a transformar pequenas economias em conquistas importantes.
+                                </p>
+                            </div>
+                            <div class="card-footer">
+                                <small class="text-body-secondary">Conteúdo demonstrativo</small>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="card h-100">
+                            <img src="./assets/card3.svg" class="card-img-top" alt="Promoção 3">
+                            <div class="card-body">
+                                <h5 class="card-title">Planeje hoje, conquiste amanhã</h5>
+                                <p class="card-text">
+                                    Distribuir seus recursos e conhecer suas opções ajuda a equilibrar seus objetivos. Organize suas prioridades, acompanhe seus resultados e tome decisões de acordo com sua realidade financeira.
+                                </p>
+                            </div>
+                            <div class="card-footer">
+                                <small class="text-body-secondary">Conteúdo demonstrativo</small>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="container" style="margin-top: 20px;">
+                <div class="row row-cols-1 row-cols-md-3 g-4">
+                    <div class="col">
+                        <div class="card h-100">
+                            <img src="./assets/card4.svg" class="card-img-top" alt="Promoção 4">
+                            <div class="card-body">
+                                <h5 class="card-title">Planeje hoje, conquiste amanhã</h5>
+                                <p class="card-text">
+                                    Distribuir seus recursos e conhecer suas opções ajuda a equilibrar seus objetivos. Organize suas prioridades, acompanhe seus resultados e tome decisões de acordo com sua realidade financeira.
+                                </p>
+                            </div>
+                            <div class="card-footer">
+                                <small class="text-body-secondary">Conteúdo demonstrativo</small>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="card h-100">
+                            <img src="./assets/card5.svg" class="card-img-top" alt="Promoção 2">
+                            <div class="card-body">
+                                <h5 class="card-title">Construa sua reserva de segurança</h5>
+                                <p class="card-text">
+                                    Uma reserva de emergência ajuda a lidar com imprevistos sem comprometer seus planos. Comece com pequenas quantias, acompanhe sua evolução e construa essa proteção no seu ritmo.
+                                </p>
+                            </div>
+                            <div class="card-footer">
+                                <small class="text-body-secondary">Conteúdo demonstrativo</small>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="card h-100">
+                            <img src="./assets/card6.svg" class="card-img-top" alt="Promoção 3">
+                            <div class="card-body">
+                                <h5 class="card-title">Mais controle em cada compra</h5>
+                                <p class="card-text">
+                                    Antes de comprar, confira seu orçamento e defina um limite. Com planejamento, você aproveita suas escolhas com mais segurança e evita surpresas no fim do mês.
+                                </p>
+                            </div>
+                            <div class="card-footer">
+                                <small class="text-body-secondary">Conteúdo demonstrativo</small>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="container" style="margin-top: 20px;">
+                <div class="row row-cols-1 row-cols-md-3 g-4">
+                    <div class="col">
+                        <div class="card h-100">
+                            <img src="./assets/card7.svg" class="card-img-top" alt="Promoção 4">
+                            <div class="card-body">
+                                <h5 class="card-title">Liberdade com responsabilidade</h5>
+                                <p class="card-text">
+                                    Liberdade financeira é ter clareza para escolher. Alinhe seus desejos às suas possibilidades, acompanhe seus gastos e avance passo a passo em direção às suas metas.
+                                </p>
+                            </div>
+                            <div class="card-footer">
+                                <small class="text-body-secondary">Conteúdo demonstrativo</small>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="card h-100">
+                            <img src="./assets/card8.svg" class="card-img-top" alt="Promoção 2">
+                            <div class="card-body">
+                                <h5 class="card-title">Priorize o que tem valor</h5>
+                                <p class="card-text">
+                                    Experiências especiais ficam ainda melhores quando cabem no orçamento. Planeje seus momentos, poupe com propósito e evite comprometer o futuro por uma compra impulsiva.
+                                </p>
+                            </div>
+                            <div class="card-footer">
+                                <small class="text-body-secondary">Conteúdo demonstrativo</small>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="card h-100">
+                            <img src="./assets/card9.svg" class="card-img-top" alt="Promoção 3">
+                            <div class="card-body">
+                                <h5 class="card-title">Finanças simples para a vida real</h5>
+                                <p class="card-text">
+                                    A rotina pode ser corrida, mas cuidar do dinheiro não precisa ser complicado. Use o GoodPay para acompanhar suas despesas, organizar prioridades e manter seus objetivos sempre à vista.
+                                </p>
+                            </div>
+                            <div class="card-footer">
+                                <small class="text-body-secondary">Conteúdo demonstrativo</small>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section name="card-sobrenos">
+            <div class="container" style="margin-top:20px;">
+                <ul class="nav nav-tabs bg-light">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="#infografico">Nossa proposta</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#historico">Nossa trajetória</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Quem somos</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link disabled" aria-disabled="true">Fale conosco</a>
+                    </li>
+                </ul>
+                <div class="card" style="width: 100%;" id="infografico">
+                    <div class="card mb-3" style="max-width: 100%;">
+                        <div class="row g-0">
+                            <div class="col-md-4">
+                                <img src="./assets/infografico.svg" class="img-fluid rounded-start"
+                                    alt="Mecanica de Promoções" width="100%">
+                            </div>
+                            <div class="col-md-8">
+                                <div class="card-body">
+                                    <h5 class="card-title">Como o GoodPay ajuda você</h5>
+                                    <p class="card-text">
+                                        O GoodPay reúne organização, planejamento e informação em um só lugar. Acompanhe seus hábitos, defina metas e tome decisões mais conscientes para construir uma relação saudável com o dinheiro.
+                                    </p>
+                                    <p class="card-text"><small class="text-body-secondary">Conteúdo demonstrativo</small></p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="card" style="width: 100%;" id="historico">
+                    <div class="card mb-3" style="max-width: 100%;">
+                        <div class="row g-0">
+                            <div class="col-md-4">
+                                <img src="./assets/campanhas.svg" class="img-fluid rounded-start"
+                                    alt="Mecanica de Promoções" width="100%">
+                            </div>
+                            <div class="col-md-8">
+                                <div class="card-body">
+                                    <h5 class="card-title">Como o GoodPay ajuda você</h5>
+                                    <p class="card-text">
+                                        O GoodPay reúne organização, planejamento e informação em um só lugar. Acompanhe seus hábitos, defina metas e tome decisões mais conscientes para construir uma relação saudável com o dinheiro.
+                                    </p>
+                                    <p class="card-text"><small class="text-body-secondary">Conteúdo demonstrativo</small></p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <script src="./engine/index.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+            integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
+            crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.min.js"
+            integrity="sha384-G/EV+4j2dNv+tEPo3++6LCgdCROaejBqfUeNjuKAiuXbjrxilcCdDz6ZAVfHWe1Y"
+            crossorigin="anonymous"></script>
+    </footer>
+
+</body>
+a
+</html>

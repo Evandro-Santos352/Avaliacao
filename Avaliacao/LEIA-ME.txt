@@ -1,0 +1,14 @@
+GOODPAY — VERSÃO COM IDENTIDADE VISUAL ATUALIZADA
+
+Arquivos:
+- index.html: página principal
+- dashboard.html: área do usuário (mantém os IDs e chamadas existentes)
+- 404.html: página de erro personalizada
+- bootstrap/styles_complements.css: tema visual azul-marinho/azul
+- assets/: ilustrações SVG locais usadas pelas páginas
+
+IMPORTANTE:
+1. O arquivo original engine/index.js não foi fornecido. Ele precisa ser copiado para a pasta engine/ para que login, armazenamento e carregamento dinâmico continuem funcionando.
+2. Não foram incluídas senhas reais. O e-mail demo@goodpay.com.br e os placeholders são apenas dados ilustrativos; a autenticação depende do engine/index.js e do serviço configurado no projeto.
+3. Os arquivos Firebase/configuração e demais dependências originais também não foram enviados. Este pacote contém somente os HTMLs e recursos visuais preparados a partir do material recebido.
+4. Nenhuma hospedagem ou publicação foi feita.

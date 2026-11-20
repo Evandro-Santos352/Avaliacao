@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 650">
+<defs><linearGradient id="g" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#0b1d3a"/><stop offset="1" stop-color="#2563eb"/></linearGradient></defs>
+<rect width="1200" height="650" rx="36" fill="url(#g)"/>
+<circle cx="1000" cy="100" r="220" fill="#ffffff" opacity=".07"/><circle cx="150" cy="600" r="250" fill="#38bdf8" opacity=".10"/>
+<rect x="760" y="150" width="290" height="330" rx="28" fill="#ffffff" opacity=".12" stroke="#ffffff" stroke-opacity=".35" stroke-width="3"/>
+<text x="905" y="365" font-size="170" font-family="Arial,sans-serif" text-anchor="middle" fill="#ffffff" font-weight="700">$</text>
+<text x="90" y="280" font-size="58" font-family="Arial,sans-serif" fill="#ffffff" font-weight="700">Educação financeira</text>
+<text x="94" y="345" font-size="28" font-family="Arial,sans-serif" fill="#dbeafe">Conhecimento para escolhas melhores</text>
+<path d="M95 405h420" stroke="#7dd3fc" stroke-width="8" stroke-linecap="round"/>
+<text x="95" y="555" font-size="25" font-family="Arial,sans-serif" fill="#bfdbfe">GOODPAY • FINANÇAS COM CLAREZA</text>
+</svg>

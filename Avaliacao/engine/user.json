@@ -1,0 +1,147 @@
+[
+    {
+        "id": 1,
+        "name": "Victor Icoma",
+        "email": "victoricoma@gmail.com",
+        "photoUrl": "https://avatars.githubusercontent.com/u/31005408?v=4",
+        "password": "123456",
+        "saldo": 1512,
+        "pontos": 563,
+        "extrato": [
+            {
+                "id": 1,
+                "descricao": "Compra de produto",
+                "valor": -110,
+                "data": "2024-06-01"
+            },
+            {
+                "id": 2,
+                "descricao": "Depósito",
+                "valor": 220,
+                "data": "2024-06-02"
+            },
+            {
+                "id": 3,
+                "descricao": "Compra de produto",
+                "valor": -50,
+                "data": "2024-06-03"
+            }
+        ]
+    },
+    {
+        "id": 2,
+        "name": "Caio Artrax",
+        "email": "caioartrax@gmail.com",
+        "photoUrl": "https://avatars.githubusercontent.com/u/24300358?v=4",
+        "password": "884455",
+        "saldo": 1050,
+        "pontos": 1052,
+        "extrato": [
+            {
+                "id": 1,
+                "descricao": "Compra de produto",
+                "valor": -120,
+                "data": "2024-06-01"
+            },
+            {
+                "id": 2,
+                "descricao": "Depósito",
+                "valor": 220,
+                "data": "2024-06-02"
+            },
+            {
+                "id": 3,
+                "descricao": "Compra de produto",
+                "valor": -50,
+                "data": "2024-06-03"
+            }
+        ]
+    },
+    {
+        "id": 3,
+        "name": "Marcio Silva",
+        "email": "marciosilva@gmail.com",
+        "photoUrl": "",
+        "password": "654321",
+        "saldo": 5200,
+        "pontos": 2300,
+        "extrato": [
+            {
+                "id": 1,
+                "descricao": "Compra de produto",
+                "valor": -150,
+                "data": "2024-06-01"
+            },
+            {
+                "id": 2,
+                "descricao": "Depósito",
+                "valor": 250,
+                "data": "2024-06-02"
+            },
+            {
+                "id": 3,
+                "descricao": "Compra de produto",
+                "valor": -500,
+                "data": "2024-06-03"
+            }
+        ]
+    },
+    {
+        "id": 4,
+        "name": "Jasmine Franco",
+        "email": "jasminifranco@gmail.com",
+        "photoUrl": "",
+        "password": "998877",
+        "saldo": 1250,
+        "pontos": 1300,
+        "extrato": [
+            {
+                "id": 1,
+                "descricao": "Compra de produto",
+                "valor": -100,
+                "data": "2024-06-01"
+            },
+            {
+                "id": 2,
+                "descricao": "Depósito",
+                "valor": 200,
+                "data": "2024-06-02"
+            },
+            {
+                "id": 3,
+                "descricao": "Compra de produto",
+                "valor": -50,
+                "data": "2024-06-03"
+            }
+        ]
+    },
+    {
+        "id": 5,
+        "name": "Angeline Cardoso",
+        "email": "angelcadoso@gmail.com",
+        "photoUrl": "",
+        "password": "998877",
+        "saldo": 2530,
+        "pontos": 2300,
+        "extrato": [
+            {
+                "id": 1,
+                "descricao": "Compra de produto",
+                "valor": -150,
+                "data": "2024-06-01"
+            },
+            {
+                "id": 2,
+                "descricao": "Depósito",
+                "valor": 280,
+                "data": "2024-06-02"
+            },
+            {
+                "id": 3,
+                "descricao": "Compra de produto",
+                "valor": -510,
+                "data": "2024-06-03"
+            }
+        ]
+    }
+]
